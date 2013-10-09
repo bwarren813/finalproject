@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Oct 9, 2013 1:30:05 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class name="musicPlayerDB.entity.Song" table="SONG" schema="BRANDON123">
+        <composite-id name="id" class="musicPlayerDB.entity.SongId">
+            <key-property name="title" type="string">
+                <column name="TITLE" length="20" />
+            </key-property>
+            <key-property name="artist" type="string">
+                <column name="ARTIST" length="20" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>
